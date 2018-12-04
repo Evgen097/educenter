@@ -1,0 +1,351 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>English language centre||Daniel Knafo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_game.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/622cc25ba3.js"></script>
+
+</head>
+
+<body>
+<!-- контент/////////////////////////////////////////////////////////// -->
+
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation"  style= "margin: -50px 0 0 0px">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style= "margin: -15px 0 0 0"><img src="img/logo.png" height=50 width=180></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a  href="javascript://0" onclick="slowScroll ('#about')" style= "color: #4682B4;"><span class="glyphicon glyphicon-home" ria-hidden="true"></span> О нас</a></li>
+                <li><a href="javascript://0" onclick="slowScroll ('#teachers')" style= "color: #4682B4;"><span class="glyphicon glyphicon-info-sign" ria-hidden="true"></span> Преподаватели</a></li>
+                <li><a  href="javascript://0" onclick="slowScroll ('#foto')" style= "color: #4682B4;"><span class="glyphicon glyphicon-info-sign" ria-hidden="true"></span> Фотогалерея</a></li>
+                <li><a href="javascript://0" onclick="slowScroll ('#contacts ')"  style= "color: #4682B4;"><span class="glyphicon glyphicon-envelope" ria-hidden="true"></span> Контакты</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a data-toggle="modal" data-target="#loginModal" style= "color: white; font-size: 20px">
+                    <span class="glyphicon glyphicon-earphone"></span> 099 967 70 42</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header  class="jumbotron">
+
+    <!-- Main component for a primary marketing message or call to action -->
+
+    <div class="container">
+        <div  class="row row-header">
+            <div  class="col-xs-12 col-sm-12 col-lg-12">
+                <h2>Откройте мир возможностей!</h2>
+                <p>Learn to communicate with the world around you.</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+</div>
+    <div class="row row-content red lightBlue">
+
+        <div  id="about"  class="col-xs-10  col-xs-offset-1 col-sm-5 col-sm-offset-1 col-lg-5 col-lg-offset-1  yellow">
+            <p style="padding:5px;"></p>
+            <h2 align="center">Клуб иностранных языков EDUCENTER - это опыт работы с 2001 года</h2>
+            <p style="padding:5px;"></p>
+            <h4 style="font-size: 21px;">Мы предлагаем живое общение с носителем языка из Канады.</h4>
+            <p  style="font-size: 17px;">
+                Центр развития языков – это языковой центр с прогрессивными методиками обучения. У нас вы сможете быстро и эффективно и с разумными
+                затратами овладеть иностранным языком, повысить уровень коммуникативных компетенций.</br></br>
+
+                 <span class="p_not_displayed_on_xl">
+                     Наш курс и программа идеально подойдут для людей, которые уже изучали, или же только начинают свое знакомство с английским.
+                     Мы гарантируем, что, посещая наши занятия, вы улучшите свое мастерство и научитесь свободно говорить на английском языке.</br></br>
+                 </span>
+            </p>
+        </div>
+
+        <div  class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0 col-lg-5 col-lg-offset-0 green">
+            <div class="gay_picture"></div>
+        </div>
+
+    </div>
+
+    <div class="row row-content red  hidden-xs"
+         ng-init="
+                         dishes_1=[
+                         {
+                           fa: 'fa_reasons fa fa-book',
+                           name: 'На английском языке говорят во всем мире',
+                           description:'Английский язык не является самым распространенным языком (это название идет с Китая), но в третьем, после испанского. И число 335 миллионов носителей языка-это респектабельно.'
+                        },
+                        {
+                           fa: 'fa_reasons fa fa-envelope',
+                           name: 'Образование',
+                           description:'Хочет учиться за границей или публикации научной статьи? Скорее всего, вы решите изучать английский язык в какой-то момент по пути, или учиться в выбранном учебном заведении.'
+                        },
+                        {
+                           fa: 'fa_reasons fa fa-briefcase',
+                           name: 'Язык, кино и музыка',
+                           description:'Если вы любите ходить в кино и поклонник комедий, то английский язык должен быть в вашем списке. Вот потому так много в мире фильмов пишутся и на английском.',
+                        }];
+                         dishes_2=[
+                         {
+                         fa: 'fa_reasons fa fa-graduation-cap',
+                           name: 'Международный бизнес требует английский',
+                           description:'С точки зрения международной торговли, английский - язык который необходимо изучать. Когда китайцы делають бизнес в Египте, переговоры и заключение сделок происходит на английском языке.',
+                        },
+                         {
+                         fa: 'fa_reasons fa fa-map-o',
+                           name: 'Идеальный язык для путешествий',
+                           description:'Если вы часто путешествуете, Вы заметите знаки, как правило, приходят в местном языке первого и второго английского. Это потому, что английский является самым популярным международным языком..',
+                        },
+                         {
+                         fa: 'fa_reasons fa fa-users',
+                            name: 'Английский для IT',
+                           description:'Необходим для работы в ІТ-компаниях, уверенного общения с зарубежными коллегами на профессиональные темы, чтения оригинальной литературы.',
+                        }
+                        ]
+                         ">
+        <div  class="col-xs-12 col-sm-12 col-lg-12">
+
+
+            <div  class="col-xs-12 col-sm-12 col-lg-12">
+                <h2 align="center">6 причин, чтобы начать изучать иностранный язык</h2>
+                <p style="padding:20px;"></p>
+            </div>
+
+
+            <div class="col-xs-10  col-xs-offset-1 col-sm-5 col-sm-offset-1 col-lg-5 col-lg-offset-1 green" >
+                <ul class="media-list">
+                    <li class="media" ng-repeat="dish in dishes_1">
+                        <div class="media-left media-top">
+                            <i  style="font-size: 50px; color: #FF8C00;" class="{{dish.fa}}"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">{{dish.name}}</h3>
+                            <p style="font-size: 16px;" >{{dish.description}}</p>
+                        </div>
+                        <p style="padding:5px;"></p>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0 col-lg-5 col-lg-offset-0 yellow" >
+                <ul class="media-list">
+                    <li class="media" ng-repeat="dish in dishes_2">
+                        <div class="media-left media-top">
+                            <i  style="font-size: 50px; color: #FF8C00;" class="{{dish.fa}}"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">{{dish.name}}</h3>
+                            <p style="font-size: 16px;">{{dish.description}}</p>
+                        </div>
+                        <p style="padding:5px;"></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row row-content red lightBlue">
+
+        <div id="teachers" class="hidden-xs  col-xs-offset-1 col-sm-5 col-sm-offset-1 col-lg-5 col-lg-offset-1 green  ">
+            <div class="world_picture"></div>
+        </div>
+
+        <div  class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0 col-lg-5 col-lg-offset-0 yellow">
+            <h2 align="center">Открыты следующие направления:</h2>
+
+            <h3 >- английский язык для взрослых</h3>
+            <h3 style="margin: -5px 0 25px 0px"> - французский язык</h3>
+            <p  style="font-size: 16px;">
+                Авторская методика позволяет быстро пройти курс обучения, при этом получив надежные знания. <span class="p_not_displayed_on_xl"> Накопленный опыт и современный подход дают возможность предоставить широкий спектр образовательных направлений.</span>
+                Мы предлагаем:
+               <ul  style="font-size: 16px;">
+                <li> Разговорные программы для взрослых;</li>
+                <li> Живое общение для детей и взрослых на английском языке;</li>
+                <li> Бизнес специализация;</li>
+                <li> Корпоративное обучение английскому языку;</li>
+                <li> Подготовка к международным экзаменам;</li>
+                <li> Подготовка к собеседованию в иностранных компаниях и посольстве;</li>
+                <li> Пробный экзамен IELTS;</li>
+                </ul>
+            </p>
+            <h4  style="margin: 30px 0 0px 0px"  >Занятия в группах для корпоративных клиентов.</h4>
+            <h4 style="margin: 10px 0 20px 0px" >Индивидуальные занятия: стоимость 150 грн. в час.</h4>
+
+            <!--<p>Daniel Knafo - француз канадского происхождения. Родные языки - английский и французский.
+
+            Он имеет 20-летний опыт преподавания английского языка в университете и в компаниях или языковых школах.</p>
+            <p>Наша главная задача – чтобы вы чувствовали себя лучше в современном мире, свободнее, общаясь на иностранном языке. Наш центр – это не просто курсы иностранных языков. Это школа ,в которой к вам отнесутся с большим вниманием и подберут для вас оптимальный вариант обучения..</p>-->
+
+        </div>
+
+    </div>
+
+
+    <div class="row row-content get_free">
+
+        <div  class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1">
+            <h2>Получить бесплатное пробное занятие!</h2>
+            <p>Вы можете получить бесплатый урок с носителем английского языка, просто позвоните по телефону:</p>
+        </div>
+
+        <div  class="col-xs-12 col-sm-12 col-lg-10 col-lg-offset-1">
+            <div>
+                <!--<input class="form-control" style="width: 200px; margin: 0 auto" id="ex3" type="text"  placeholder="email">  -->
+                <h2>099 967 70 42 Daniel</h2>
+
+                <button type="button" class="btn btn-warning btn-md">I WANT A LESSON</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="row row-content orange"  style= "margin: 0px 0 0px 0;">
+        <div class="col-xs-12">
+            <div id="mycarousel" class="carousel slide"  style= "margin: -50px 0 0px 0;" data-ride="carousel" data-interval="10000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li style= "margin: 0 0 0 0" data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#mycarousel" data-slide-to="1"></li>
+                    <li data-target="#mycarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img class="img-responsive"
+                             src="" alt="">
+                        <div class="carousel-caption" >
+                            <p class="carousel_text">Я хотела бы поблагодарить за позитив, удивительные уроки и высокой
+                                профессионализм. Мне будет не хватать наших уроков!</br><cite style="font-size: 20px;">-Anna</cite></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive"
+                             src="" alt="">
+                        <div class="carousel-caption">
+                            <p class="carousel_text">Я изучаю английский с носителем языка (native speaker). Материал преподносится очень доходчиво,занятия насыщенные и разнообразные, 2 часа пролетают незаметно.</br> <cite style="font-size: 20px;">-Svetlana</cite></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive"
+                             src="" alt="">
+                        <div class="carousel-caption">
+                            <p  class="carousel_text">Дениель замечательный и очень позитивный человек, чувствуется что опыт преподавания у него большой и эффект ощущаешь сразу же после первых занятий.</br> <cite style="font-size: 20px;">-Irina</cite></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row row-content red game_row"   style= "margin: -50px 0 0px 0px">
+        <audio src="sound/bul.mp3"></audio>
+        <audio src="sound/wrong.mp3"></audio>
+        <div class="game">
+            <div class="game_field">
+                <div class="game_win_word_place"></div>
+                <div class="game_score">score: <span class="game_score_current_div">0</span></div>
+                <div class="game_progress_bar"></div>
+            </div>
+        </div>
+   </div>
+
+
+    <div id="foto" class="row row-content col-xs-12 green slider_fotogallery"  style= "margin: 0px 0 80px 0">
+            <div class="slider_moving">
+                <div class="slider_moving_foto foto_number_1"><img src="img/slider/foto_slider_1.jpg" width="400px"  alt="photo slider"></div>
+                <div class="slider_moving_foto foto_number_2"><img src="img/slider/foto_slider_2.jpg" width="400px"  alt="photo slider"></div>
+                <div class="slider_moving_foto foto_number_3"><img src="img/slider/foto_slider_1.jpg" width="400px"  alt="photo slider"></div>
+                <div class="slider_moving_foto foto_number_1"><img src="img/slider/foto_slider_1.jpg" width="400px"  alt="photo slider"></div>
+                <div class="slider_moving_foto foto_number_2"><img src="img/slider/foto_slider_2.jpg" width="400px"  alt="photo slider"></div>
+                <div class="slider_moving_foto foto_number_3"><img src="img/slider/foto_slider_1.jpg" width="400px"  alt="photo slider"></div>
+                <div class="slider_moving_foto foto_number_1"><img src="img/slider/foto_slider_1.jpg" width="400px"  alt="photo slider"></div>
+                <div class="slider_moving_foto foto_number_2"><img src="img/slider/foto_slider_2.jpg" width="400px"  alt="photo slider"></div>
+                <div class="slider_moving_foto foto_number_3"><img src="img/slider/foto_slider_1.jpg" width="400px"  alt="photo slider"></div>
+            </div>
+    </div>
+
+<footer class="row-footer">
+    <div class="container">
+        <div  class="row">
+            <div  id="contacts"  class="col-xs-4 col-xs-offset-1 col-sm-2 col-sm-offset-1">
+                <h5>Links</h5>
+                <ul  class="list-unstyled">
+                    <li><a href="javascript://0" onclick="slowScroll ('#about')"</a>О нас</li>
+                    <li><a href="javascript://0" onclick="slowScroll ('#teachers')">Преподаватели</a></li>
+                    <li><a  href="javascript://0" onclick="slowScroll ('#foto')" >Фотогалерея</a></li>
+                    <li><a href="javascript://0" onclick="slowScroll ('#contacts ')">Контакты </a></li>
+                </ul>
+            </div>
+            <div  class="col-xs-7 col-sm-5">
+                <h5>Our Address</h5>
+                <address>
+                    г. Харьков, метро Научная<br>
+                    <i class="fa fa-phone"></i>: 099 967 70 42 Daniel<br>
+                    <i class="fa fa-skype"></i>: tourprague2<br>
+                    <i class="fa fa-envelope"></i>:
+                    <a href="mailto:tourprague@centrum.cz">tourprague@centrum.cz</a>
+                </address>
+            </div>
+            <div  class="col-xs-1 hidden-xs col-sm-4 red">
+                <div style="padding: 0px 0px;">
+                    <div class="nav navbar-nav" style="padding: 0px 10px;">
+                        <a class="btn btn-social-icon btn-facebook" href="javascript://0"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="javascript://0"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="javascript://0"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:tourprague@centrum.cz"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Latest compiled and minified JavaScript -->
+
+<script src="js/bootstrap.min.js"></script>
+<script src="angular/angular.min.js"></script>
+<script src = "js/educenter.js"></script>
+<script src = "js/game_ars.js"></script>
+<script src = "js/game.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-87946653-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+

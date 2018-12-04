@@ -1,0 +1,161 @@
+﻿.jumbotron {
+    padding:0px 0px 0px 0px;
+    margin:0px auto;
+    height: 700px;
+    background: #003c5a;
+    color:floralwhite;
+    background-image: url(../img/back_map.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  0background-attachment:fixed;
+  background-position:center top;
+  text-align: center;
+}
+
+.jumbotron p{
+  color: #4682B4;
+  font-size: 14px;
+}
+
+
+.row-header{
+    margin:0px auto;
+    padding:80px 0px 0px 0px;
+    font-size: 40px;
+}
+
+.row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    0min-height:400px;
+}
+
+.row-footer{
+    background-color: #272727;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+    color:#808080;
+
+}
+
+address{
+    font-size:100%;
+    margin:0px;
+    color:#808080;
+}
+
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+
+.navbar-inverse {
+     0background: #303F9F;
+     background: #003c5a;
+     border: none;
+     
+}
+.gay_picture{
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/gay.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  0background-attachment:fixed;
+  background-position:center top;
+  text-align: center;
+}
+.lightBlue{
+  background: #edf4f8;
+}
+.world_picture{
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/map.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  0background-attachment:fixed;
+  background-position:center top;
+  text-align: center;
+}
+.get_free{
+    padding:50px 0px 50px 0px;
+    margin:0px auto;
+    min-height:250px;
+    background: #003c5a;
+    color:floralwhite;
+    text-align: center;
+    font-size: 30px;
+}
+
+.get_free p{
+  color: #4682B4;
+  font-size: 14px;
+}
+.carousel_text{
+    font-size: 25px;
+    margin: 0 0 30px 0;
+    font-family: 'Open Sans', sans-serif;";
+    font-style: italic;
+}
+.orange{
+    background: #D2691E;
+    height: 300px;
+}
+.carousel {
+    background:#D2691E;
+}
+.game_row{
+    height: 500px;
+}
+
+..red{
+  background: red;
+}
+..green{
+  background: green;
+}
+..yellow{
+  background: yellow;
+}
+.carousel .item {
+  height: 300px;
+}
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+/*slider_moving///////////////////////////////////////////////////*/
+.slider_moving{
+    position: relative;
+    background-color: #252626;
+    0width: 1200px;
+    height: 300px;
+    overflow: hidden;
+    0border: 5px solid green;
+}
+.slider_moving_foto {
+    -webkit-transition: all 2s;
+    float: left;
+    position: absolute;
+}
+.slider_fotogallery{
+    height: 300px;
+    background: none;
+}
+/*slider_moving///////////////////////////////////////////////////*/
+
+
+@media screen and (min-width:200px) and (max-width:600px) {
+    .carousel_text{
+        font-size: 19px;
+        margin: 0 0 0px 0;
+    }
+    .p_not_displayed_on_xl{
+        display: none;
+    }
+
+}
